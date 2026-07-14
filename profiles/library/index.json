@@ -9,6 +9,15 @@
     "tier": "verified"
   },
   {
+    "file": "nier-replicant.json",
+    "name": "Nier Replicant",
+    "game": "NieR Replicant",
+    "author": "LordVicky",
+    "description": "L2 stays soft, then stiffens hard at the end of the pull and rumbles the longer you hold it; R2 is a light weapon click with an early wall.",
+    "capabilities": "L2 multi-zone · R2 weapon · 1 modifier",
+    "tier": "community"
+  },
+  {
     "file": "stray.json",
     "name": "Stray",
     "game": "Stray",
