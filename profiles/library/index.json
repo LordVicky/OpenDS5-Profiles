@@ -9,6 +9,15 @@
     "tier": "verified"
   },
   {
+    "file": "mouse-pi-for-hire.json",
+    "name": "MOUSE P.I. For HIre",
+    "game": "MOUSE: P.I. For Hire",
+    "author": "LordVicky",
+    "description": "L2 ramps to a firm stop and kicks once you bottom it out; R2 has a stiff back half that buzzes and tightens as you keep holding.",
+    "capabilities": "L2 slope · R2 multi-zone · 3 modifiers",
+    "tier": "community"
+  },
+  {
     "file": "nier-replicant.json",
     "name": "Nier Replicant",
     "game": "NieR Replicant",
