@@ -1,0 +1,35 @@
+name: Validate profiles
+
+on:
+  pull_request:
+    paths:
+      - 'profiles/**'
+      - 'scripts/**'
+      - 'validator/**'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # index.json is generated on merge. A hand-edited index would conflict on every concurrent
+      # PR and could claim capabilities a profile does not have.
+      - name: Reject edits to index.json
+        run: |
+          if git diff --name-only "origin/${{ github.base_ref }}...HEAD" \
+            | grep -qx 'profiles/library/index.json'; then
+            echo "::error file=profiles/library/index.json::index.json is generated on merge -- please revert your changes to it."
+            exit 1
+          fi
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # Runs every profile through validator/, vendored verbatim from the app, so a profile that
+      # would fail on install fails here instead.
+      - name: Validate every profile
+        run: node scripts/build-index.mjs --validate-only

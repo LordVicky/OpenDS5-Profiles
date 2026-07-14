@@ -1,0 +1,38 @@
+name: Rebuild index
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'profiles/**'
+      - 'scripts/**'
+      - 'validator/**'
+
+jobs:
+  index:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # If this fails, index.json keeps its previous, valid contents and the app keeps serving the
+      # old index rather than a broken one.
+      - name: Regenerate index.json
+        run: node scripts/build-index.mjs
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- profiles/library/index.json; then
+            echo "index.json already up to date."
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add profiles/library/index.json
+          git commit -m 'chore: rebuild profile index'
+          git push

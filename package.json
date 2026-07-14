@@ -1,0 +1,16 @@
+{
+  "name": "opends5-profiles",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Adaptive-trigger profiles served to the OpenDS5 companion app.",
+  "license": "AGPL-3.0-or-later",
+  "scripts": {
+    "validate": "node scripts/build-index.mjs --validate-only",
+    "check": "node scripts/build-index.mjs --check",
+    "build-index": "node scripts/build-index.mjs"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2"
+  }
+}
