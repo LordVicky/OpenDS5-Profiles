@@ -1,0 +1,102 @@
+{
+  "version": 1,
+  "id": "mouse-p-i-for-hire",
+  "name": "MOUSE P.I. For HIre",
+  "meta": {
+    "game": "MOUSE: P.I. For Hire",
+    "author": "LordVicky",
+    "description": "L2 ramps to a firm stop and kicks once you bottom it out; R2 has a stiff back half that buzzes and tightens as you keep holding."
+  },
+  "match": {
+    "processNames": [
+      "mouse.exe"
+    ],
+    "windowTitles": []
+  },
+  "triggers": {
+    "l2": {
+      "base": {
+        "mode": "slope",
+        "startPercent": 20,
+        "endPercent": 90,
+        "startForcePercent": 10,
+        "endForcePercent": 100
+      },
+      "modifiers": [
+        {
+          "when": {
+            "source": "input",
+            "condition": "trigger-held-over",
+            "threshold": 100,
+            "ms": 250
+          },
+          "effect": {
+            "mode": "vibration",
+            "startPercent": 50,
+            "forcePercent": 100,
+            "frequencyHz": 15
+          }
+        }
+      ]
+    },
+    "r2": {
+      "base": {
+        "mode": "multi-feedback",
+        "zones": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          30,
+          40,
+          40,
+          80,
+          100
+        ]
+      },
+      "modifiers": [
+        {
+          "when": {
+            "source": "input",
+            "condition": "trigger-held-over",
+            "threshold": 50,
+            "ms": 120
+          },
+          "effect": {
+            "mode": "multi-vibration",
+            "frequencyHz": 20,
+            "zones": [
+              0,
+              0,
+              0,
+              0,
+              40,
+              40,
+              60,
+              80,
+              80,
+              100
+            ]
+          }
+        },
+        {
+          "when": {
+            "source": "input",
+            "condition": "trigger-held-over",
+            "threshold": 50,
+            "ms": 200
+          },
+          "effect": {
+            "mode": "slope",
+            "startPercent": 20,
+            "endPercent": 90,
+            "startForcePercent": 10,
+            "endForcePercent": 100
+          }
+        }
+      ]
+    }
+  },
+  "updatedAtMs": 1783963268710
+}
