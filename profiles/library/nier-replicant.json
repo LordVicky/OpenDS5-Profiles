@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "id": "nier-replicant",
+  "name": "Nier Replicant",
+  "meta": {
+    "game": "NieR Replicant",
+    "author": "LordVicky",
+    "description": "L2 stays soft, then stiffens hard at the end of the pull and rumbles the longer you hold it; R2 is a light weapon click with an early wall."
+  },
+  "match": {
+    "processNames": [
+      "nier replicant ver.1.22474487139.exe"
+    ],
+    "windowTitles": []
+  },
+  "triggers": {
+    "l2": {
+      "base": {
+        "mode": "multi-feedback",
+        "zones": [
+          0,
+          0,
+          0,
+          0,
+          20,
+          30,
+          40,
+          40,
+          80,
+          100
+        ]
+      },
+      "modifiers": [
+        {
+          "when": {
+            "source": "input",
+            "condition": "trigger-held-over",
+            "threshold": 50,
+            "ms": 300
+          },
+          "effect": {
+            "mode": "multi-vibration",
+            "frequencyHz": 30,
+            "zones": [
+              0,
+              0,
+              20,
+              40,
+              60,
+              60,
+              80,
+              80,
+              100,
+              100
+            ]
+          }
+        }
+      ]
+    },
+    "r2": {
+      "base": {
+        "mode": "weapon",
+        "startPercent": 0,
+        "wallPercent": 30,
+        "forcePercent": 35
+      },
+      "modifiers": []
+    }
+  },
+  "updatedAtMs": 1783860949345
+}
