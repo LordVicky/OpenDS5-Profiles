@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "id": "stray",
+  "name": "Stray",
+  "meta": {
+    "game": "Stray",
+    "author": "LordVicky",
+    "description": "A gentle L2 ramp that firms up through the pull, and an R2 with a ridge mid-travel that settles into a slow rumble when you hold it."
+  },
+  "match": {
+    "processNames": [
+      "stray-win64-shipping.exe"
+    ],
+    "windowTitles": []
+  },
+  "triggers": {
+    "l2": {
+      "base": {
+        "mode": "slope",
+        "startPercent": 20,
+        "endPercent": 95,
+        "startForcePercent": 10,
+        "endForcePercent": 65
+      },
+      "modifiers": []
+    },
+    "r2": {
+      "base": {
+        "mode": "multi-feedback",
+        "zones": [
+          0,
+          0,
+          20,
+          20,
+          40,
+          40,
+          60,
+          60,
+          0,
+          0
+        ]
+      },
+      "modifiers": [
+        {
+          "when": {
+            "source": "input",
+            "condition": "trigger-held-over",
+            "threshold": 50,
+            "ms": 600
+          },
+          "effect": {
+            "mode": "vibration",
+            "startPercent": 55,
+            "forcePercent": 30,
+            "frequencyHz": 3
+          }
+        }
+      ]
+    }
+  },
+  "updatedAtMs": 1783964603826
+}
