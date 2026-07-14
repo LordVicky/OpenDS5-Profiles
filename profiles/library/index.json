@@ -7,5 +7,14 @@
     "description": "Demonstrates multi-zone feedback (L2) and slope (R2).",
     "capabilities": "L2 multi-zone · R2 slope",
     "tier": "verified"
+  },
+  {
+    "file": "stray.json",
+    "name": "Stray",
+    "game": "Stray",
+    "author": "LordVicky",
+    "description": "A gentle L2 ramp that firms up through the pull, and an R2 with a ridge mid-travel that settles into a slow rumble when you hold it.",
+    "capabilities": "L2 slope · R2 multi-zone · 1 modifier",
+    "tier": "community"
   }
 ]
