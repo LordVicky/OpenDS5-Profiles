@@ -1,52 +1,110 @@
 # OpenDS5 Profiles Library
 
-Adaptive-trigger data for the OpenDS5 companion app.
+Adaptive-trigger profiles for the [OpenDS5](https://github.com/LordVicky/OpenDS5) companion app.
 
-This repository is a **published mirror**, not a working repo. The app fetches the
-files below at runtime to populate its in-app library browser. They are generated
-and pushed from upstream — edits made directly here are overwritten on the next
-publish.
+This is the library the app fetches at runtime, and it is open to contributions. If you have tuned
+a trigger profile for a game you like, open a pull request — once it is merged, it shows up in
+everyone's in-app library browser. No app release is needed.
 
-## Contents
+## Contributing a profile
 
-- `profiles/library/index.json` — the profile catalog the app reads. Generated.
-- `profiles/library/native.json` — games that drive the adaptive triggers themselves.
-- `profiles/library/<game>.json` — one adaptive-trigger profile per file.
+**1. Export it from the app.** Tune the profile in OpenDS5, then **Trigger Profiles → Export**.
+Export it rather than writing the JSON by hand: the app writes the exact shape the validator
+expects, and it fills in the trigger data for you.
 
-## Profile tiers
+**2. Fork this repo** and drop the file at `profiles/library/<game-slug>.json`. The name must be a
+lowercase slug — `cyberpunk-2077.json`, `nier-replicant.json`. It is interpolated into the URL the
+app fetches, so anything else is rejected.
+
+**3. Fill in `meta`:**
+
+```json
+{
+  "name": "Cyberpunk 2077",
+  "meta": {
+    "game": "Cyberpunk 2077",
+    "author": "your-github-handle",
+    "description": "Weapon-aware resistance: heavy pull on power weapons, light click on tech."
+  },
+  "triggers": { "...": "exported by the app" }
+}
+```
+
+- `game` — the game's real name. This is the heading shown on the library card.
+- `author` — how you want to be credited.
+- `description` — one sentence on what the triggers feel like in game. Write what a player would
+  want to know, not what the JSON contains.
+- **Leave `tier` out.** See [Tiers](#tiers).
+
+**4. Open a pull request.** CI validates your profile using the same validator the app runs at
+install time, so if it passes here it will load in the app. If it fails, the error message names
+the exact field.
+
+**5. A maintainer reviews and merges it.** They hardware-test it on a DualSense. If it passes, they
+mark it `verified` and merge; otherwise it still merges, as `community`.
+
+### Don't edit `index.json`
+
+`profiles/library/index.json` is generated on merge. Contributors never touch it — a hand-edited
+index would conflict on every concurrent pull request, and it could claim capabilities a profile
+does not actually have. CI rebuilds it from the profiles themselves, and a PR that modifies it
+fails.
+
+### Validating locally (optional)
+
+```sh
+npm install
+npm run validate
+```
+
+This runs every profile through the validator and prints the derived capability line for each one.
+It is exactly what CI runs on your pull request.
+
+## Tiers
 
 Every profile in the catalog carries a `tier`:
 
 | Tier | Meaning |
 |---|---|
-| `verified` | Hardware-tested by the maintainer. |
-| `community` | Submitted, not yet hardware-tested. |
+| `verified` | Hardware-tested by a maintainer. |
+| `community` | Submitted and valid, not yet hardware-tested. |
 
-A profile with no tier is treated as `community` — an unlabelled profile is never
-presented as verified.
+A profile with no tier is treated as `community`, so an unlabelled profile never presents itself as
+verified. Only a maintainer sets `verified`, at merge time — leave the field out of your PR.
 
 Profiles ported from an existing game mod also carry an `origin`
-(`{ "kind": "port", "from": "<mod name>" }`). That is independent of tier: a port can
-be verified or community.
+(`{ "kind": "port", "from": "<mod name>" }`). That is independent of tier: a port can be verified or
+community.
 
 ## Native games
 
-`native.json` lists games with native adaptive-trigger support, sourced from
-[PCGamingWiki](https://www.pcgamingwiki.com/wiki/List_of_games_that_support_DualSense).
-These need no profile — OpenDS5 passes the game's own trigger effects through, and the
-app shows them as **Native** with nothing to install.
+`profiles/library/native.json` lists games with native adaptive-trigger support, sourced from
+[PCGamingWiki](https://www.pcgamingwiki.com/wiki/List_of_games_that_support_DualSense). These need
+no profile — OpenDS5 passes the game's own trigger effects through, and the app shows them as
+**Native** with nothing to install.
 
-The list covers games the wiki marks as native or limited-native adaptive-trigger
-support. Games that only work with a manual fix are not included.
+The list covers games the wiki marks as native or limited-native. Games that only work with a
+manual fix are not included. It is maintainer-curated; if a game is missing, open an issue rather
+than a pull request.
 
-## Descriptions
+## Descriptions and capabilities
 
-A profile's `description` is one sentence written by its author. The `capabilities`
-line next to it (`L2 multi-zone · R2 slope · 2 modifiers`) is **derived from the
-profile itself** at publish time, so it cannot claim an effect the profile does not
-have.
+Your `description` is your own sentence. The `capabilities` line the app shows next to it
+(`L2 multi-zone · R2 slope · 2 modifiers`) is **derived from the profile itself** by CI, using the
+same code the app runs — so it can never claim an effect the profile does not have. You do not
+write it, and you cannot override it.
 
-## Notes
+## Repository layout
 
-Profiles are currently curated by the maintainer. The app imports and exports profile
-JSON directly, so you can always build and share your own locally.
+```
+profiles/library/<game>.json   profiles — you add these
+profiles/library/index.json    the catalog the app reads — generated by CI
+profiles/library/native.json   games with native trigger support — maintainer-curated
+validator/                     the app's validator, vendored verbatim
+scripts/build-index.mjs        validates profiles; regenerates index.json
+scripts/validate-profile.mts   the validation harness build-index.mjs calls
+```
+
+## License
+
+Profiles are contributed under AGPL-3.0-or-later, matching OpenDS5.
