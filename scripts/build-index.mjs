@@ -73,6 +73,13 @@ try {
   fail('build-index: could not parse derived profile data from validate-profile.');
 }
 
+// The app exports a profile without any meta at all, so a contributor has to add it by hand --
+// which means forgetting is the default, not the exception. These three fields are what the
+// library card is made of (game is its heading), and the profile validator cannot demand them:
+// a profile the user keeps locally has no reason to name a game. So the library requires them
+// here, or a merge would publish a card with a blank heading and no author.
+const REQUIRED_META = ['game', 'author', 'description'];
+
 // A profile with no tier is community: an unlabelled profile must never publish itself as
 // maintainer-verified.
 const index = profileFiles.map((file) => {
@@ -83,12 +90,29 @@ const index = profileFiles.map((file) => {
   if (typeof capabilities !== 'string') {
     fail(`build-index: no derived capabilities for ${file}.`);
   }
+
+  const missing = REQUIRED_META.filter(
+    (field) => typeof meta[field] !== 'string' || meta[field].trim() === ''
+  );
+  if (missing.length > 0) {
+    fail(
+      `build-index: ${file} is missing required meta: ${missing.join(', ')}.\n` +
+        'The app does not export a meta block, so add one by hand:\n' +
+        '  "meta": {\n' +
+        '    "game": "Stray",\n' +
+        '    "author": "your-github-handle",\n' +
+        '    "description": "One sentence on what the triggers feel like in game."\n' +
+        '  }\n' +
+        'Leave "tier" out -- a maintainer sets it after a hardware test.'
+    );
+  }
+
   return {
     file,
     name: profile.name,
-    game: meta.game ?? '',
-    author: meta.author ?? '',
-    description: meta.description ?? '',
+    game: meta.game.trim(),
+    author: meta.author.trim(),
+    description: meta.description.trim(),
     capabilities,
     tier: meta.tier === 'verified' ? 'verified' : 'community',
     ...(meta.origin ? { origin: meta.origin } : {})
