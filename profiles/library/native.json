@@ -1,138 +1,1090 @@
 [
-  { "game": "007 First Light" },
-  { "game": "A Plague Tale: Requiem" },
-  { "game": "Alan Wake II" },
-  { "game": "Apex Legends" },
-  { "game": "Arknights: Endfield" },
-  { "game": "Assassin's Creed Shadows" },
-  { "game": "Assassin's Creed Valhalla" },
-  { "game": "Avatar: Frontiers of Pandora" },
-  { "game": "Banishers: Ghosts of New Eden" },
-  { "game": "Battlefield 6" },
-  { "game": "BeamNG.drive" },
-  { "game": "Black Myth: Wukong" },
-  { "game": "Borderlands 4" },
-  { "game": "Bramble: The Mountain King" },
-  { "game": "Bugsnax" },
-  { "game": "Cairn" },
-  { "game": "Call of Duty: Black Ops 6" },
-  { "game": "Call of Duty: Black Ops 7" },
-  { "game": "Call of Duty: Black Ops Cold War" },
-  { "game": "Call of Duty: Modern Warfare II" },
-  { "game": "Call of Duty: Modern Warfare III" },
-  { "game": "Call of Duty: Warzone 2.0" },
-  { "game": "Call of the Wild: The Angler" },
-  { "game": "Crime Boss: Rockay City" },
-  { "game": "Crimson Desert" },
-  { "game": "Cronos: The New Dawn" },
-  { "game": "Cthulhu: The Cosmic Abyss" },
-  { "game": "Cyberpunk 2077" },
-  { "game": "Dave the Diver" },
-  { "game": "Days Gone" },
-  { "game": "Death Stranding 2: On the Beach" },
-  { "game": "Death Stranding Director's Cut" },
-  { "game": "Deathloop" },
-  { "game": "Dolmen" },
-  { "game": "Dying Light 2 Stay Human" },
-  { "game": "Dying Light: The Beast" },
-  { "game": "Eriksholm: The Stolen Dream" },
-  { "game": "Everspace 2" },
-  { "game": "F1 2021" },
-  { "game": "F1 22" },
-  { "game": "F1 23" },
-  { "game": "F1 24" },
-  { "game": "F1 25" },
-  { "game": "FBC: Firebreak" },
-  { "game": "Far Cry 6" },
-  { "game": "Final Fantasy VII Rebirth" },
-  { "game": "Final Fantasy VII Remake Intergrade" },
-  { "game": "Final Fantasy XIV: A Realm Reborn" },
-  { "game": "Final Fantasy XVI" },
-  { "game": "Forspoken" },
-  { "game": "Genshin Impact" },
-  { "game": "Ghost of Tsushima Director's Cut" },
-  { "game": "Ghostwire: Tokyo" },
-  { "game": "God of War Ragnar\u00f6k" },
-  { "game": "Granblue Fantasy: Relink" },
-  { "game": "Grand Theft Auto V Enhanced" },
-  { "game": "Hellblade II: Senua's Saga" },
-  { "game": "Helldivers 2" },
-  { "game": "Hi-Fi Rush" },
-  { "game": "Horizon Forbidden West" },
-  { "game": "Horizon Zero Dawn Remastered" },
-  { "game": "Indiana Jones and the Great Circle" },
-  { "game": "Jak II (OpenGOAL)" },
-  { "game": "John Carpenter's Toxic Commando" },
-  { "game": "Kingdom Come: Deliverance II" },
-  { "game": "Lego Batman: Legacy of the Dark Knight" },
-  { "game": "Lost Soul Aside" },
-  { "game": "Marvel Rivals" },
-  { "game": "Marvel's Spider-Man 2" },
-  { "game": "Marvel's Spider-Man Remastered" },
-  { "game": "Marvel's Spider-Man: Miles Morales" },
-  { "game": "Mecha Break" },
-  { "game": "Metro Exodus" },
-  { "game": "Metro Exodus Enhanced Edition" },
-  { "game": "MindsEye" },
-  { "game": "Monster Hunter Wilds" },
-  { "game": "Mortal Shell II" },
-  { "game": "Neva" },
-  { "game": "Neverness to Everness" },
-  { "game": "Nioh 3" },
-  { "game": "No Man's Sky" },
-  { "game": "Off The Grid" },
-  { "game": "Overwatch 2" },
-  { "game": "Pacific Drive" },
-  { "game": "Painkiller (2025)" },
-  { "game": "Pipistrello and the Cursed Yoyo" },
-  { "game": "Pragmata" },
-  { "game": "Ratchet & Clank: Rift Apart" },
-  { "game": "Ready or Not" },
-  { "game": "Resident Evil Requiem" },
-  { "game": "Returnal" },
-  { "game": "Rise of the Ronin" },
-  { "game": "RoadCraft" },
-  { "game": "S.T.A.L.K.E.R. 2: Heart of Chornobyl" },
-  { "game": "S.T.A.L.K.E.R.: Call of Prypiat Enhanced Edition" },
-  { "game": "S.T.A.L.K.E.R.: Clear Sky Enhanced Edition" },
-  { "game": "S.T.A.L.K.E.R.: Shadow of Chornobyl Enhanced Edition" },
-  { "game": "SEASON: A letter to the future" },
-  { "game": "Sackboy: A Big Adventure" },
-  { "game": "Scars Above" },
-  { "game": "Screamer (2026)" },
-  { "game": "Sea of Thieves" },
-  { "game": "Signalis" },
-  { "game": "Silent Hill 2" },
-  { "game": "Skull and Bones" },
-  { "game": "Star Wars Jedi: Survivor" },
-  { "game": "Star Wars Outlaws" },
-  { "game": "Stellar Blade" },
-  { "game": "Styx: Blades of Greed" },
-  { "game": "Suicide Squad: Kill the Justice League" },
-  { "game": "Tainted Grail: The Fall of Avalon" },
-  { "game": "Test Drive Unlimited Solar Crown" },
-  { "game": "The Chant" },
-  { "game": "The Crew Motorfest" },
-  { "game": "The Elder Scrolls IV: Oblivion Remastered" },
-  { "game": "The First Berserker: Khazan" },
-  { "game": "The First Descendant" },
-  { "game": "The Last of Us Part I" },
-  { "game": "The Last of Us Part II Remastered" },
-  { "game": "The Riftbreaker" },
-  { "game": "The Witcher 3: Wild Hunt" },
-  { "game": "Tom Clancy's Rainbow Six Extraction" },
-  { "game": "Tom Clancy's Rainbow Six Siege" },
-  { "game": "Tony Hawk's Pro Skater 3 + 4" },
-  { "game": "Uncharted: Legacy of Thieves Collection" },
-  { "game": "Until Dawn" },
-  { "game": "V Rising" },
-  { "game": "WRC 10: FIA World Rally Championship" },
-  { "game": "WRC Generations" },
-  { "game": "Warframe" },
-  { "game": "Warhammer 40,000: Space Marine II" },
-  { "game": "Where Winds Meet" },
-  { "game": "World War Z" },
-  { "game": "Wuthering Waves" },
-  { "game": "Yakuza Kiwami 3 & Dark Ties" },
-  { "game": "Zenless Zone Zero" }
+  {
+    "game": "007 First Light",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "A Plague Tale: Requiem",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "Alan Wake II",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Apex Legends",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Arknights: Endfield",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Assassin's Creed Shadows",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "Assassin's Creed Valhalla",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Avatar: Frontiers of Pandora",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "Banishers: Ghosts of New Eden",
+    "features": {
+      "triggers": true,
+      "haptics": false,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "Battlefield 6",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "BeamNG.drive",
+    "features": {
+      "triggers": true,
+      "haptics": false,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "Black Myth: Wukong",
+    "features": {
+      "triggers": true,
+      "haptics": false,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Borderlands 4",
+    "features": {
+      "triggers": true,
+      "haptics": false,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Bramble: The Mountain King",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Bugsnax",
+    "features": {
+      "triggers": true,
+      "haptics": false,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "Cairn",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Call of Duty: Black Ops 6",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Call of Duty: Black Ops 7",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Call of Duty: Black Ops Cold War",
+    "features": {
+      "triggers": true,
+      "haptics": false,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Call of Duty: Modern Warfare II",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Call of Duty: Modern Warfare III",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Call of Duty: Warzone 2.0",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Call of the Wild: The Angler",
+    "features": {
+      "triggers": true,
+      "haptics": false,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Crime Boss: Rockay City",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Crimson Desert",
+    "features": {
+      "triggers": true,
+      "haptics": false,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Cronos: The New Dawn",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "Cthulhu: The Cosmic Abyss",
+    "features": {
+      "triggers": true,
+      "haptics": false,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Cyberpunk 2077",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "Dave the Diver",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "Days Gone",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "Death Stranding 2: On the Beach",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "Death Stranding Director's Cut",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "Deathloop",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Dolmen",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Dying Light 2 Stay Human",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Dying Light: The Beast",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Eriksholm: The Stolen Dream",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Everspace 2",
+    "features": {
+      "triggers": true,
+      "haptics": false,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "F1 2021",
+    "features": {
+      "triggers": true,
+      "haptics": false,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "F1 22",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "F1 23",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "F1 24",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "F1 25",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "Far Cry 6",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "FBC: Firebreak",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Final Fantasy VII Rebirth",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Final Fantasy VII Remake Intergrade",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "Final Fantasy XIV: A Realm Reborn",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Final Fantasy XVI",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Forspoken",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "Genshin Impact",
+    "features": {
+      "triggers": true,
+      "haptics": false,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Ghost of Tsushima Director's Cut",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "Ghostwire: Tokyo",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "God of War Ragnarök",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "Granblue Fantasy: Relink",
+    "features": {
+      "triggers": true,
+      "haptics": false,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Grand Theft Auto V Enhanced",
+    "features": {
+      "triggers": true,
+      "haptics": false,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "Hellblade II: Senua's Saga",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Helldivers 2",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Hi-Fi Rush",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Horizon Forbidden West",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Horizon Zero Dawn Remastered",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "Indiana Jones and the Great Circle",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "Jak II (OpenGOAL)",
+    "features": {
+      "triggers": true,
+      "haptics": false,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "John Carpenter's Toxic Commando",
+    "features": {
+      "triggers": true,
+      "haptics": false,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Kingdom Come: Deliverance II",
+    "features": {
+      "triggers": true,
+      "haptics": false,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "Lego Batman: Legacy of the Dark Knight",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Lost Soul Aside",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "Marvel Rivals",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "Marvel's Spider-Man 2",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "Marvel's Spider-Man Remastered",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "Marvel's Spider-Man: Miles Morales",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "Mecha Break",
+    "features": {
+      "triggers": true,
+      "haptics": false,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "Metro Exodus",
+    "features": {
+      "triggers": true,
+      "haptics": false,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "Metro Exodus Enhanced Edition",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "MindsEye",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "Monster Hunter Wilds",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Mortal Shell II",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Neva",
+    "features": {
+      "triggers": true,
+      "haptics": false,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "Neverness to Everness",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "Nioh 3",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "No Man's Sky",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Off The Grid",
+    "features": {
+      "triggers": true,
+      "haptics": false,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Overwatch 2",
+    "features": {
+      "triggers": true,
+      "haptics": false,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Pacific Drive",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "Painkiller (2025)",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "Pipistrello and the Cursed Yoyo",
+    "features": {
+      "triggers": true,
+      "haptics": false,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "Pragmata",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "Ratchet &amp; Clank: Rift Apart",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Ready or Not",
+    "features": {
+      "triggers": true,
+      "haptics": false,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Resident Evil Requiem",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "Returnal",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Rise of the Ronin",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "RoadCraft",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "S.T.A.L.K.E.R. 2: Heart of Chornobyl",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "S.T.A.L.K.E.R.: Call of Prypiat Enhanced Edition",
+    "features": {
+      "triggers": true,
+      "haptics": false,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "S.T.A.L.K.E.R.: Clear Sky Enhanced Edition",
+    "features": {
+      "triggers": true,
+      "haptics": false,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "S.T.A.L.K.E.R.: Shadow of Chornobyl Enhanced Edition",
+    "features": {
+      "triggers": true,
+      "haptics": false,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Sackboy: A Big Adventure",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Scars Above",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Screamer (2026)",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "Sea of Thieves",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "SEASON: A letter to the future",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Signalis",
+    "features": {
+      "triggers": true,
+      "haptics": false,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Silent Hill 2",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "Skull and Bones",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Star Wars Jedi: Survivor",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "Star Wars Outlaws",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Stellar Blade",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Styx: Blades of Greed",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Suicide Squad: Kill the Justice League",
+    "features": {
+      "triggers": true,
+      "haptics": false,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "Tainted Grail: The Fall of Avalon",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "Test Drive Unlimited Solar Crown",
+    "features": {
+      "triggers": true,
+      "haptics": false,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "The Chant",
+    "features": {
+      "triggers": true,
+      "haptics": false,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "The Crew Motorfest",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "The Elder Scrolls IV: Oblivion Remastered",
+    "features": {
+      "triggers": true,
+      "haptics": false,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "The First Berserker: Khazan",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "The First Descendant",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "The Last of Us Part I",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "The Last of Us Part II Remastered",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "The Riftbreaker",
+    "features": {
+      "triggers": true,
+      "haptics": false,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "The Witcher 3: Wild Hunt",
+    "features": {
+      "triggers": true,
+      "haptics": false,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "Tom Clancy's Rainbow Six Extraction",
+    "features": {
+      "triggers": true,
+      "haptics": false,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "Tom Clancy's Rainbow Six Siege",
+    "features": {
+      "triggers": true,
+      "haptics": false,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "Tony Hawk's Pro Skater 3 + 4",
+    "features": {
+      "triggers": true,
+      "haptics": false,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Uncharted: Legacy of Thieves Collection",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "Until Dawn",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "V Rising",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Warframe",
+    "features": {
+      "triggers": true,
+      "haptics": false,
+      "lightbar": true
+    }
+  },
+  {
+    "game": "Warhammer 40,000: Space Marine II",
+    "features": {
+      "triggers": true,
+      "haptics": false,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Where Winds Meet",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "World War Z",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "WRC 10: FIA World Rally Championship",
+    "features": {
+      "triggers": true,
+      "haptics": false,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "WRC Generations",
+    "features": {
+      "triggers": true,
+      "haptics": true,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Wuthering Waves",
+    "features": {
+      "triggers": true,
+      "haptics": false,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Yakuza Kiwami 3 &amp; Dark Ties",
+    "features": {
+      "triggers": true,
+      "haptics": false,
+      "lightbar": false
+    }
+  },
+  {
+    "game": "Zenless Zone Zero",
+    "features": {
+      "triggers": true,
+      "haptics": false,
+      "lightbar": false
+    }
+  }
 ]
