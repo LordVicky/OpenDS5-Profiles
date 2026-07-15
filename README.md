@@ -30,7 +30,12 @@ app fetches, so anything else is rejected.
 }
 ```
 
-- `game` — the game's real name. This is the heading shown on the library card.
+- `game` — the game's official name, spelled the way its store page spells it
+  (e.g. `Ghost of Tsushima Director's Cut`, apostrophe and all). This is the heading shown on
+  the library card, and the app uses it to connect profiles, native flags, and the user's own
+  game entries. Matching ignores case, punctuation, and spacing (`DIRECTORS CUT` still finds
+  `Director's Cut`) — but the exact string is what users see, so use the canonical spelling.
+  Editions count as different games: a `Director's Cut` profile does not attach to the base game.
 - `author` — how you want to be credited.
 - `description` — one sentence on what the triggers feel like in game. Write what a player would
   want to know, not what the JSON contains.
