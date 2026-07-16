@@ -1,5 +1,14 @@
 [
   {
+    "file": "clair-obscur-expedition-33.json",
+    "name": "Clair Obscur: Expedition 33",
+    "game": "Clair Obscur: Expedition 33",
+    "author": "lordvicky",
+    "description": "Per-Expeditioner free-aim feels: Gustave's crisp pistol wall, Lune's soft magic ramp, Maelle's snappy duelist click, Sciel's deep heavy wall, Verso's semi-auto buzz, Monoco's growling ramp — plus a zero-resistance Exploration state so holding R2 to sprint never fatigues. Hold Create and tap D-pad Right to cycle states, D-pad Left to jump back to Exploration — both directions are unbound in-game, so switching never triggers game actions; Options raises the menu guard.",
+    "capabilities": "7 states · 2 switch rules · 5 modifiers",
+    "tier": "community"
+  },
+  {
     "file": "default-showcase.json",
     "name": "Showcase",
     "game": "Any",
