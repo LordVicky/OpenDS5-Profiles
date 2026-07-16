@@ -1,0 +1,280 @@
+{
+  "version": 1,
+  "id": "clair-obscur-expedition-33",
+  "name": "Clair Obscur: Expedition 33",
+  "match": {
+    "processNames": [
+      "sandfall-win64-shipping.exe",
+      "expedition33_steam.exe"
+    ],
+    "windowTitles": [
+      "Clair Obscur: Expedition 33"
+    ]
+  },
+  "triggers": {
+    "l2": {
+      "base": {
+        "mode": "feedback",
+        "startPercent": 20,
+        "forcePercent": 30
+      },
+      "modifiers": []
+    },
+    "r2": {
+      "base": {
+        "mode": "off"
+      },
+      "modifiers": []
+    }
+  },
+  "states": [
+    {
+      "name": "Exploration",
+      "triggers": {
+        "l2": {
+          "base": {
+            "mode": "feedback",
+            "startPercent": 20,
+            "forcePercent": 30
+          },
+          "modifiers": []
+        },
+        "r2": {
+          "base": {
+            "mode": "off"
+          },
+          "modifiers": []
+        }
+      }
+    },
+    {
+      "name": "Gustave",
+      "triggers": {
+        "l2": {
+          "base": {
+            "mode": "feedback",
+            "startPercent": 30,
+            "forcePercent": 45
+          },
+          "modifiers": []
+        },
+        "r2": {
+          "base": {
+            "mode": "weapon",
+            "startPercent": 30,
+            "wallPercent": 65,
+            "forcePercent": 60
+          },
+          "modifiers": [
+            {
+              "when": {
+                "source": "input",
+                "condition": "trigger-full-pull"
+              },
+              "effect": {
+                "mode": "vibration",
+                "startPercent": 40,
+                "forcePercent": 60,
+                "frequencyHz": 35
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Lune",
+      "triggers": {
+        "l2": {
+          "base": {
+            "mode": "feedback",
+            "startPercent": 30,
+            "forcePercent": 45
+          },
+          "modifiers": []
+        },
+        "r2": {
+          "base": {
+            "mode": "slope",
+            "startPercent": 20,
+            "endPercent": 90,
+            "startForcePercent": 25,
+            "endForcePercent": 60
+          },
+          "modifiers": [
+            {
+              "when": {
+                "source": "input",
+                "condition": "trigger-full-pull"
+              },
+              "effect": {
+                "mode": "vibration",
+                "startPercent": 30,
+                "forcePercent": 40,
+                "frequencyHz": 28
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Maelle",
+      "triggers": {
+        "l2": {
+          "base": {
+            "mode": "feedback",
+            "startPercent": 30,
+            "forcePercent": 45
+          },
+          "modifiers": []
+        },
+        "r2": {
+          "base": {
+            "mode": "weapon",
+            "startPercent": 20,
+            "wallPercent": 45,
+            "forcePercent": 45
+          },
+          "modifiers": []
+        }
+      }
+    },
+    {
+      "name": "Sciel",
+      "triggers": {
+        "l2": {
+          "base": {
+            "mode": "feedback",
+            "startPercent": 30,
+            "forcePercent": 45
+          },
+          "modifiers": []
+        },
+        "r2": {
+          "base": {
+            "mode": "weapon",
+            "startPercent": 35,
+            "wallPercent": 80,
+            "forcePercent": 90
+          },
+          "modifiers": [
+            {
+              "when": {
+                "source": "input",
+                "condition": "trigger-held-over",
+                "threshold": 200,
+                "ms": 350
+              },
+              "effect": {
+                "mode": "vibration",
+                "startPercent": 30,
+                "forcePercent": 55,
+                "frequencyHz": 8
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Verso",
+      "triggers": {
+        "l2": {
+          "base": {
+            "mode": "feedback",
+            "startPercent": 30,
+            "forcePercent": 45
+          },
+          "modifiers": []
+        },
+        "r2": {
+          "base": {
+            "mode": "weapon",
+            "startPercent": 30,
+            "wallPercent": 65,
+            "forcePercent": 70
+          },
+          "modifiers": [
+            {
+              "when": {
+                "source": "input",
+                "condition": "trigger-full-pull"
+              },
+              "effect": {
+                "mode": "vibration",
+                "startPercent": 35,
+                "forcePercent": 50,
+                "frequencyHz": 30
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Monoco",
+      "triggers": {
+        "l2": {
+          "base": {
+            "mode": "feedback",
+            "startPercent": 30,
+            "forcePercent": 45
+          },
+          "modifiers": []
+        },
+        "r2": {
+          "base": {
+            "mode": "slope",
+            "startPercent": 25,
+            "endPercent": 95,
+            "startForcePercent": 40,
+            "endForcePercent": 100
+          },
+          "modifiers": [
+            {
+              "when": {
+                "source": "input",
+                "condition": "trigger-held-over",
+                "threshold": 180,
+                "ms": 300
+              },
+              "effect": {
+                "mode": "vibration",
+                "startPercent": 25,
+                "forcePercent": 60,
+                "frequencyHz": 10
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "switching": {
+    "rules": [
+      {
+        "button": "dpad-right",
+        "action": "cycle",
+        "while": "create"
+      },
+      {
+        "button": "dpad-left",
+        "action": "select",
+        "state": "Exploration",
+        "while": "create"
+      }
+    ],
+    "defaultState": "Exploration",
+    "menuButtons": [
+      "options"
+    ],
+    "menuTimeoutMs": 20000
+  },
+  "updatedAtMs": 1784227200000,
+  "meta": {
+    "game": "Clair Obscur: Expedition 33",
+    "author": "lordvicky",
+    "description": "Per-Expeditioner free-aim feels: Gustave's crisp pistol wall, Lune's soft magic ramp, Maelle's snappy duelist click, Sciel's deep heavy wall, Verso's semi-auto buzz, Monoco's growling ramp — plus a zero-resistance Exploration state so holding R2 to sprint never fatigues. Hold Create and tap D-pad Right to cycle states, D-pad Left to jump back to Exploration — both directions are unbound in-game, so switching never triggers game actions; Options raises the menu guard."
+  }
+}
