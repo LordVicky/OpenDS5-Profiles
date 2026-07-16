@@ -4,8 +4,8 @@
   "name": "MOUSE: P.I. For Hire",
   "match": {
     "processNames": [
-      "MOUSE-Win64-Shipping.exe",
-      "MOUSE.exe"
+      "mouse-win64-shipping.exe",
+      "mouse.exe"
     ],
     "windowTitles": [
       "MOUSE: P.I. For Hire"
@@ -14,23 +14,39 @@
   "triggers": {
     "l2": {
       "base": {
-        "mode": "feedback",
-        "startPercent": 40,
-        "forcePercent": 55
+        "mode": "off"
       },
       "modifiers": []
     },
     "r2": {
       "base": {
-        "mode": "weapon",
-        "startPercent": 45,
-        "wallPercent": 75,
-        "forcePercent": 55
+        "mode": "feedback",
+        "startPercent": 20,
+        "forcePercent": 30
       },
       "modifiers": []
     }
   },
   "states": [
+    {
+      "name": "Mitts",
+      "triggers": {
+        "l2": {
+          "base": {
+            "mode": "off"
+          },
+          "modifiers": []
+        },
+        "r2": {
+          "base": {
+            "mode": "feedback",
+            "startPercent": 20,
+            "forcePercent": 30
+          },
+          "modifiers": []
+        }
+      }
+    },
     {
       "name": "Micer",
       "triggers": {
@@ -61,29 +77,6 @@
             "startPercent": 45,
             "wallPercent": 75,
             "forcePercent": 55
-          },
-          "modifiers": []
-        }
-      }
-    },
-    {
-      "name": "James Gun",
-      "triggers": {
-        "l2": {
-          "base": {
-            "mode": "vibration",
-            "startPercent": 25,
-            "forcePercent": 80,
-            "frequencyHz": 35
-          },
-          "modifiers": []
-        },
-        "r2": {
-          "base": {
-            "mode": "vibration",
-            "startPercent": 30,
-            "forcePercent": 60,
-            "frequencyHz": 22
           },
           "modifiers": []
         }
@@ -123,6 +116,91 @@
             "startPercent": 30,
             "wallPercent": 65,
             "forcePercent": 85
+          },
+          "modifiers": []
+        }
+      }
+    },
+    {
+      "name": "Devarnisher",
+      "triggers": {
+        "l2": {
+          "base": {
+            "mode": "weapon",
+            "startPercent": 30,
+            "wallPercent": 70,
+            "forcePercent": 65
+          },
+          "modifiers": []
+        },
+        "r2": {
+          "base": {
+            "mode": "vibration",
+            "startPercent": 35,
+            "forcePercent": 55,
+            "frequencyHz": 15
+          },
+          "modifiers": []
+        }
+      }
+    },
+    {
+      "name": "James Gun",
+      "triggers": {
+        "l2": {
+          "base": {
+            "mode": "vibration",
+            "startPercent": 25,
+            "forcePercent": 80,
+            "frequencyHz": 35
+          },
+          "modifiers": []
+        },
+        "r2": {
+          "base": {
+            "mode": "vibration",
+            "startPercent": 30,
+            "forcePercent": 60,
+            "frequencyHz": 22
+          },
+          "modifiers": []
+        }
+      }
+    },
+    {
+      "name": "Loose Cannon",
+      "triggers": {
+        "l2": {
+          "base": {
+            "mode": "slope",
+            "startPercent": 25,
+            "endPercent": 95,
+            "startForcePercent": 40,
+            "endForcePercent": 100
+          },
+          "modifiers": [
+            {
+              "when": {
+                "source": "input",
+                "condition": "trigger-held-over",
+                "threshold": 180,
+                "ms": 300
+              },
+              "effect": {
+                "mode": "vibration",
+                "startPercent": 25,
+                "forcePercent": 60,
+                "frequencyHz": 12
+              }
+            }
+          ]
+        },
+        "r2": {
+          "base": {
+            "mode": "weapon",
+            "startPercent": 20,
+            "wallPercent": 55,
+            "forcePercent": 100
           },
           "modifiers": []
         }
@@ -175,45 +253,6 @@
       }
     },
     {
-      "name": "Loose Cannon",
-      "triggers": {
-        "l2": {
-          "base": {
-            "mode": "slope",
-            "startPercent": 25,
-            "endPercent": 95,
-            "startForcePercent": 40,
-            "endForcePercent": 100
-          },
-          "modifiers": [
-            {
-              "when": {
-                "source": "input",
-                "condition": "trigger-held-over",
-                "threshold": 180,
-                "ms": 300
-              },
-              "effect": {
-                "mode": "vibration",
-                "startPercent": 25,
-                "forcePercent": 60,
-                "frequencyHz": 12
-              }
-            }
-          ]
-        },
-        "r2": {
-          "base": {
-            "mode": "weapon",
-            "startPercent": 20,
-            "wallPercent": 55,
-            "forcePercent": 100
-          },
-          "modifiers": []
-        }
-      }
-    },
-    {
       "name": "Portable Freezer",
       "triggers": {
         "l2": {
@@ -222,91 +261,6 @@
             "startPercent": 30,
             "wallPercent": 70,
             "forcePercent": 65
-          },
-          "modifiers": []
-        },
-        "r2": {
-          "base": {
-            "mode": "vibration",
-            "startPercent": 25,
-            "forcePercent": 45,
-            "frequencyHz": 10
-          },
-          "modifiers": []
-        }
-      }
-    },
-    {
-      "name": "Devarnisher",
-      "triggers": {
-        "l2": {
-          "base": {
-            "mode": "weapon",
-            "startPercent": 30,
-            "wallPercent": 70,
-            "forcePercent": 65
-          },
-          "modifiers": []
-        },
-        "r2": {
-          "base": {
-            "mode": "vibration",
-            "startPercent": 35,
-            "forcePercent": 55,
-            "frequencyHz": 15
-          },
-          "modifiers": []
-        }
-      }
-    },
-    {
-      "name": "Hellrazor",
-      "triggers": {
-        "l2": {
-          "base": {
-            "mode": "vibration",
-            "startPercent": 20,
-            "forcePercent": 55,
-            "frequencyHz": 25
-          },
-          "modifiers": []
-        },
-        "r2": {
-          "base": {
-            "mode": "vibration",
-            "startPercent": 15,
-            "forcePercent": 65,
-            "frequencyHz": 18
-          },
-          "modifiers": []
-        }
-      }
-    },
-    {
-      "name": "Mitts",
-      "triggers": {
-        "l2": {
-          "base": {
-            "mode": "off"
-          },
-          "modifiers": []
-        },
-        "r2": {
-          "base": {
-            "mode": "feedback",
-            "startPercent": 20,
-            "forcePercent": 30
-          },
-          "modifiers": []
-        }
-      }
-    },
-    {
-      "name": "D-Namite",
-      "triggers": {
-        "l2": {
-          "base": {
-            "mode": "off"
           },
           "modifiers": []
         },
@@ -340,10 +294,52 @@
           "modifiers": []
         }
       }
+    },
+    {
+      "name": "D-Namite",
+      "triggers": {
+        "l2": {
+          "base": {
+            "mode": "off"
+          },
+          "modifiers": []
+        },
+        "r2": {
+          "base": {
+            "mode": "vibration",
+            "startPercent": 25,
+            "forcePercent": 45,
+            "frequencyHz": 10
+          },
+          "modifiers": []
+        }
+      }
+    },
+    {
+      "name": "Hellrazor",
+      "triggers": {
+        "l2": {
+          "base": {
+            "mode": "vibration",
+            "startPercent": 20,
+            "forcePercent": 55,
+            "frequencyHz": 25
+          },
+          "modifiers": []
+        },
+        "r2": {
+          "base": {
+            "mode": "vibration",
+            "startPercent": 15,
+            "forcePercent": 65,
+            "frequencyHz": 18
+          },
+          "modifiers": []
+        }
+      }
     }
   ],
   "switching": {
-    "defaultState": "Micer",
     "rules": [
       {
         "button": "dpad-right",
@@ -370,6 +366,7 @@
         "while": "create"
       }
     ],
+    "defaultState": "Micer",
     "menuButtons": [
       "options"
     ],
@@ -383,21 +380,21 @@
         "Micer",
         "Boomstick",
         "Devarnisher",
-        "Jar-Head",
+        "James Gun",
         "Loose Cannon",
         "Kiss Kiss",
+        "Jar-Head",
         "Portable Freezer",
-        "James Gun",
         "X-1 Demousifier",
         "D-Namite",
         "Hellrazor"
       ]
     }
   },
-  "updatedAtMs": 0,
+  "updatedAtMs": 1784201953071,
   "meta": {
     "game": "MOUSE: P.I. For Hire",
-    "author": "LordVicky",
+    "author": "lordvicky",
     "description": "Trigger feels for every wheel slot: 10 guns, Mitts, and D-Namite, matching the in-game wheel (12 slots clockwise from Mitts at top). R2 = primary, L2 = alt-fire. Analog wheel mirrors the game's: hold Triangle, point the left stick, release to commit. Create + D-pad jumps to Micer/James Gun/Boomstick/Loose Cannon. Options raises the menu guard (20s); state chips re-anchor drift."
   }
 }
