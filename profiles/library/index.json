@@ -15,7 +15,7 @@
     "author": "lordvicky",
     "description": "Trigger feels for every wheel slot: 10 guns, Mitts, and D-Namite, matching the in-game wheel (12 slots clockwise from Mitts at top). R2 = primary, L2 = alt-fire. Analog wheel mirrors the game's: hold Triangle, point the left stick, release to commit. Create + D-pad jumps to Micer/James Gun/Boomstick/Loose Cannon. Options raises the menu guard (20s); state chips re-anchor drift.",
     "capabilities": "12 states · analog wheel · 4 switch rules · 3 modifiers",
-    "tier": "community"
+    "tier": "verified"
   },
   {
     "file": "nier-replicant.json",
