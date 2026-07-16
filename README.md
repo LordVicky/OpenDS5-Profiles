@@ -65,6 +65,21 @@ npm run validate
 This runs every profile through the validator and prints the derived capability line for each one.
 It is exactly what CI runs on your pull request.
 
+## Multi-state profiles
+
+Profiles can carry **states** — named per-weapon/per-vehicle trigger feels — plus the **switching**
+block that tracks them: button rules, a menu guard, and the **analog wheel** (`stickWheel`) that
+mirrors stick-driven weapon wheels, including per-slot widths for games with unequal slices. Export
+from the app as usual; the whole block travels with the profile and the library card describes it
+(`12 states · analog wheel · 4 switch rules`).
+
+Two things to know when contributing one:
+
+- **Model every slot the game's wheel draws** (melee, throwables, locked slots) — a missing slot
+  shifts every pick past it and reviewers will bounce it back.
+- Multi-state profiles need an app version with states support (post-v1.8.0); older apps reject
+  them at import with an error naming the field. That is expected, not a bug in your profile.
+
 ## Tiers
 
 Every profile in the catalog carries a `tier`:
