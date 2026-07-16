@@ -254,45 +254,14 @@
   "switching": {
     "rules": [
       {
-        "button": "dpad-down",
-        "action": "select",
-        "state": "Exploration",
-        "while": "create"
-      },
-      {
-        "button": "dpad-up",
-        "action": "select",
-        "state": "Gustave",
-        "while": "create"
-      },
-      {
         "button": "dpad-right",
-        "action": "select",
-        "state": "Lune",
+        "action": "cycle",
         "while": "create"
       },
       {
         "button": "dpad-left",
         "action": "select",
-        "state": "Maelle",
-        "while": "create"
-      },
-      {
-        "button": "cross",
-        "action": "select",
-        "state": "Sciel",
-        "while": "create"
-      },
-      {
-        "button": "circle",
-        "action": "select",
-        "state": "Verso",
-        "while": "create"
-      },
-      {
-        "button": "square",
-        "action": "select",
-        "state": "Monoco",
+        "state": "Exploration",
         "while": "create"
       }
     ],
@@ -306,6 +275,6 @@
   "meta": {
     "game": "Clair Obscur: Expedition 33",
     "author": "lordvicky",
-    "description": "Per-Expeditioner free-aim feels: Gustave's crisp pistol wall, Lune's soft magic ramp, Maelle's snappy duelist click, Sciel's deep heavy wall, Verso's semi-auto buzz, Monoco's growling ramp — plus a zero-resistance Exploration state so holding R2 to sprint never fatigues. Hold Create and press D-pad (Exploration/Gustave/Lune/Maelle) or Cross/Circle/Square (Sciel/Verso/Monoco) to switch; Options raises the menu guard."
+    "description": "Per-Expeditioner free-aim feels: Gustave's crisp pistol wall, Lune's soft magic ramp, Maelle's snappy duelist click, Sciel's deep heavy wall, Verso's semi-auto buzz, Monoco's growling ramp — plus a zero-resistance Exploration state so holding R2 to sprint never fatigues. Hold Create and tap D-pad Right to cycle states, D-pad Left to jump back to Exploration — both directions are unbound in-game, so switching never triggers game actions; Options raises the menu guard."
   }
 }
