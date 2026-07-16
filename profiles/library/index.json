@@ -10,11 +10,11 @@
   },
   {
     "file": "mouse-pi-for-hire.json",
-    "name": "MOUSE P.I. For HIre",
+    "name": "MOUSE: P.I. For Hire",
     "game": "MOUSE: P.I. For Hire",
-    "author": "LordVicky",
-    "description": "L2 ramps to a firm stop and kicks once you bottom it out; R2 has a stiff back half that buzzes and tightens as you keep holding.",
-    "capabilities": "L2 slope · R2 multi-zone · 3 modifiers",
+    "author": "lordvicky",
+    "description": "Trigger feels for every wheel slot: 10 guns, Mitts, and D-Namite, matching the in-game wheel (12 slots clockwise from Mitts at top). R2 = primary, L2 = alt-fire. Analog wheel mirrors the game's: hold Triangle, point the left stick, release to commit. Create + D-pad jumps to Micer/James Gun/Boomstick/Loose Cannon. Options raises the menu guard (20s); state chips re-anchor drift.",
+    "capabilities": "12 states · analog wheel · 4 switch rules · 3 modifiers",
     "tier": "community"
   },
   {
