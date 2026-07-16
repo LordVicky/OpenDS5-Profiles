@@ -276,32 +276,36 @@
         "action": "select",
         "state": "Maelle",
         "while": "create"
+      },
+      {
+        "button": "cross",
+        "action": "select",
+        "state": "Sciel",
+        "while": "create"
+      },
+      {
+        "button": "circle",
+        "action": "select",
+        "state": "Verso",
+        "while": "create"
+      },
+      {
+        "button": "square",
+        "action": "select",
+        "state": "Monoco",
+        "while": "create"
       }
     ],
     "defaultState": "Exploration",
     "menuButtons": [
       "options"
     ],
-    "menuTimeoutMs": 20000,
-    "stickWheel": {
-      "button": "triangle",
-      "thresholdPercent": 55,
-      "angleOffsetDeg": 334,
-      "sectors": [
-        "Exploration",
-        "Gustave",
-        "Lune",
-        "Maelle",
-        "Sciel",
-        "Verso",
-        "Monoco"
-      ]
-    }
+    "menuTimeoutMs": 20000
   },
   "updatedAtMs": 1784227200000,
   "meta": {
     "game": "Clair Obscur: Expedition 33",
     "author": "lordvicky",
-    "description": "Per-Expeditioner free-aim feels: Gustave's crisp pistol wall, Lune's soft magic ramp, Maelle's snappy duelist click, Sciel's deep heavy wall, Verso's semi-auto buzz, Monoco's growling ramp — plus a zero-resistance Exploration state so holding R2 to sprint never fatigues. Hold Triangle + flick the left stick to pick a state; Create + D-pad jumps to Exploration/Gustave/Lune/Maelle."
+    "description": "Per-Expeditioner free-aim feels: Gustave's crisp pistol wall, Lune's soft magic ramp, Maelle's snappy duelist click, Sciel's deep heavy wall, Verso's semi-auto buzz, Monoco's growling ramp — plus a zero-resistance Exploration state so holding R2 to sprint never fatigues. Hold Create and press D-pad (Exploration/Gustave/Lune/Maelle) or Cross/Circle/Square (Sciel/Verso/Monoco) to switch; Options raises the menu guard."
   }
 }
